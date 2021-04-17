@@ -8,11 +8,12 @@ cd /tmp/recovery
 
 sudo apt install git -y
 
-repo init --depth=1 -u git://github.com/minimal-manifest-twrp/platform_manifest_twrp_omni.git -b twrp-10.0 -g default,-device,-mips,-darwin,-notdefault 
+repo init --depth=1 -u git://github.com/SHRP/platform_manifest_twrp_omni.git -b v3_10.0 -g default,-device,-mips,-darwin,-notdefault
+ 
 
 repo sync -j$(nproc --all)
 
-git clone https://github.com/hraj9258/twrp_phoenix.git -b test-oss device/xiaomi/phoenix
+git clone https://github.com/Brock5555/twrp_phoenix.git -b test-oss device/xiaomi/phoenix
 
 rm -rf out
 
