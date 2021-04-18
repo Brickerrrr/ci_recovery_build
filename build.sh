@@ -13,7 +13,7 @@ repo init --depth=1 -u git://github.com/SHRP/platform_manifest_twrp_omni.git -b 
 
 repo sync -j$(nproc --all)
 
-git clone https://github.com/Brock5555/twrp_phoenix.git -b test-oss device/xiaomi/phoenix
+git clone https://github.com/hraj9258/android_device_xiaomi_phoenix_shrp.git -b android-10.0 device/xiaomi/phoenix
 
 rm -rf out
 
